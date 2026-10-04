@@ -1,0 +1,8 @@
+{
+  "qubits": 2,
+  "shots": 1024,
+  "gates": [
+    {"name": "h", "qubits": [0]},
+    {"name": "cx", "qubits": [0, 1]}
+  ]
+}
