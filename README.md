@@ -104,6 +104,7 @@ is bound to localhost in Compose for local development.
 - [FastAPI documentation](https://fastapi.tiangolo.com/)
 
 Dependency ranges live in `pyproject.toml`. GitHub Actions runs the tests on Linux.
-Local dependency installation during initial setup failed because the C: drive ran out of
-space; runtime tests and the container deployment have not yet been verified. Add a tested
-dependency lock after the first successful runtime validation.
+The initial GitHub Actions run passed all nine tests on Linux, including a real Qiskit Aer
+execution through the API and in-process queue worker. Local dependency installation failed
+because the C: drive ran out of space. Real Redis, multiple worker processes, and container
+deployment remain unverified. Add a dependency lock in the next setup milestone.
